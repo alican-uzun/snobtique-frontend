@@ -1,0 +1,75 @@
+.widgetsTopicsItem {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 0.5px var(--blue) solid;
+  border-right: 0.5px var(--blue) solid;
+  border-left: 0.5px var(--blue) solid;
+  padding: 10px 0;
+}
+.widgetsTopicsItem:hover {
+    border-radius: 0px;
+    background-color: var(--gray);
+    animation: pulsate 1s
+    ease-in-out;
+}
+@keyframes pulsate {
+  0%{
+    box-shadow:
+    0 0 25px #5ddcff;
+  }
+}
+.widgetsTopics:after {
+  content: "";
+  display: block;
+  position: relative;
+  border-radius: 4em;
+  left: 0;
+  top:0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.5s;
+  box-shadow: 0 0 10px 40px white;
+}
+
+.widgetsTopics:active:after {
+  box-shadow: 0 0 0 0 white;
+  position: relative;
+  border-radius: 4em;
+  left: 0;
+  top:0;
+  opacity: 1;
+  transition: 0s;
+}
+.widgetsTopicCategory {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 15px;
+}
+.widgetsTopicCategory > span {
+  color: #EEEEEE;
+  font-size: 15px;
+}
+.widgetsTopicCategory > .MuiSvgIcon-root {
+  margin-left: auto;
+  color: var(--gray);
+  padding: 8px;
+  font-size: 17.5px;
+  border-radius: 9999px;
+}
+.widgetsTopicCategory > .MuiSvgIcon-root:hover {
+  background-color: #20394d;
+}
+
+.widgetsTopicTitle {
+  padding: 0px 15px;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+}
+.widgetsTopicCount {
+  padding: 10px 15px;
+  color: var(--gray);
+  font-size: 13px;
+}

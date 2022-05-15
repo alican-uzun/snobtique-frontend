@@ -1,0 +1,90 @@
+.post {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 0.5px var(--blue) solid;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  word-break: break-all;
+}
+.post:hover {
+  background-color: var(--hover-color);
+}
+.post > div > .MuiAvatar-root {
+  width: 50px;
+  height: 50px;
+  margin: 0px 10px 0px 15px;
+}
+.post-content-col {
+  margin-right: 15px;
+  flex: 1;
+  position: relative;
+  flex-direction: row;
+}
+.post-header {
+  display: flex;
+  align-items: center;
+}
+.post-header-username {
+  color: var(--blue);
+  font-size: 18px;
+}
+.post-header-date {
+  margin-top: 2px;
+  margin-left: 9px;
+  color: var(--gray);
+  font-size: 12px;
+}
+.post-content {
+  text-align: justify;
+  color: #eeeeee;
+  display: inline;
+  font-size: 15px;
+  flex-direction: row;
+}
+.post-song-content {
+  margin-top: 2px;
+  color: var(--gray);
+  font-size: 15px;
+}
+.post-event {
+  display: flex;
+  flex: 1;
+}
+.post-event > div {
+  flex: 0.25;
+  display: flex;
+  align-items: center;
+}
+.post-event > div > span {
+  color: var(--gray);
+  font-size: 13px;
+}
+.postIcon {
+  fill: var(--gray);
+  width: 18px;
+  padding: 10px;
+  border-radius: 9999px;
+}
+.post-event div:nth-child(1) .postIcon:hover,
+.post-event div:nth-child(4) .postIcon:hover {
+  fill: var(--blue);
+  background-color: var(--hover-blue-color);
+}
+.post-event div:nth-child(1) .postIcon:hover + span {
+  color: var(--blue);
+}
+.post-event div:nth-child(2) .postIcon:hover {
+  fill: var(--blue);
+  background-color: rgba(23, 191, 99, 0.1);
+}
+.post-event div:nth-child(2) .postIcon:hover + span {
+  color: var(--blue);
+}
+.post-event div:nth-child(3) .postIcon:hover {
+  fill: #e0245e;
+  background-color: rgba(224, 36, 94, 0.1);
+}
+.post-event div:nth-child(3) .postIcon:hover + span {
+  color: #e0245e;
+}

@@ -1,0 +1,247 @@
+.profileHeader {
+  position: sticky;
+  z-index: 2;
+  top: 0px;
+  background-color: var(--main-bg-color);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 0.5px solid var(--blue);
+  border-top: 0.5px solid var(--blue);
+}
+.profileHeader  .MuiSvgIcon-root {
+  padding: 50%;
+  color: var(--blue);
+  border-radius: 9999px;
+}
+.profileHeader  .MuiSvgIcon-root:hover {
+  background-color: var(--hover-blue-color);
+  cursor: pointer;
+}
+.profile{
+  position: relative;
+  padding-top: 60px;
+  height: 200px;
+  width: 100%;
+  background-color: var(--main-bg-color);
+  border-bottom: 0.5px var(--blue) solid;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.profileTitle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 15px;
+}
+.profileImage {
+  width: 150px;
+  height: 150px;
+  margin-top: -20%;
+  border-radius: 9999px;
+  padding: 3px;
+  background-color: var(--blue);
+  display: relative;
+  align-items: center;
+  justify-content: center;
+}
+.profileImage > .MuiAvatar-root {
+  width: 150px;
+  height: 150px;
+}
+
+.profileBiography {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 15px;
+}
+.profileBiography span:nth-child(1) {
+  color: var(--blue);
+  font-size: 19px;
+  font-weight: 700;
+  text-align: center;
+}
+.profileBiography span:nth-child(4) {
+  display: flex;
+  align-items: center;
+  color: var(--gray);
+  font-size: 15px;
+  margin-left: 200px;
+  margin-top: -110px;
+}
+.profileBiography span:nth-child(4) .MuiSvgIcon-root {
+  font-size: 15px;
+  margin-right: 5px;
+  margin-left: 200px;
+  margin-top: -110px;
+}
+.profile div:nth-child(3) {
+  padding: 0px 15px;
+  margin-top: 5px;
+  margin-left: 240px;
+  margin-top: -60px;
+}
+.follow-info span {
+  margin-right: 15px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none; 
+  -ms-user-select: none;
+  user-select: none; 
+}
+.follow-info span span:nth-child(1) {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 15px;
+  margin-right: 5px;
+}
+.follow-info span span:nth-child(2) {
+  color: var(--gray);
+  font-size: 15px;
+}
+.profileCategory {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  border-bottom: 0.5px var(--blue) solid;
+  margin-top: 15px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none; 
+  -ms-user-select: none;
+  user-select: none; 
+}
+.profileCategory > div:nth-child(1),
+.profileCategory > div:nth-child(3),
+.profileCategory > div:nth-child(4) {
+  flex: 0.2;
+  text-align: center;
+  color: var(--gray);
+  font-size: 15px;
+  font-weight: 700;
+  padding: 15px 0px;
+}
+.profileCategory > div:nth-child(2) {
+  flex: 0.4;
+  text-align: center;
+  color: var(--gray);
+  font-size: 15px;
+  font-weight: 700;
+  padding: 15px 0px;
+}
+.profileCategoryActive {
+  border-bottom: 0px var(--blue) solid;
+}
+.profileCategoryActive > span {
+  color: var(--blue);
+}
+.follow{
+  width: 100px;
+  height: 25px;
+  color: var(--blue);
+  font-weight: 700;
+  border-radius: 9999px;
+  text-align: center;
+}
+.follow-info{
+  display: flex;
+}
+.follow span:nth-child(1) {
+  margin-right: 0px !important;
+  background: white;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  padding: 5px 10px;
+  border: 1px solid transparent;
+  border-radius: 30px;
+}
+.follow span:nth-child(1):hover {
+  border-radius: 30px;
+  background-color: var(--blue);
+  color: white;
+  animation: pulsate 1s
+  ease-in-out;
+}
+
+.follow span:nth-child(1):after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 4em;
+  left: 0;
+  top:0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.2s;
+  box-shadow: 0 0 10px 40px white;
+}
+
+.follow span:nth-child(1):active:after {
+  box-shadow: 0 0 0 0 white;
+  position: absolute;
+  border-radius: 4em;
+  left: 0;
+  top:0;
+  opacity: 1;
+  transition: 0s;
+}
+
+.unfollow span:nth-child(1) {
+  margin-right: 0px !important;
+  color: red;
+  background: white;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  padding: 5px 10px;
+  border: 1px solid transparent;
+  border-radius: 30px;
+}
+
+.unfollow span:nth-child(1):hover {
+  border-radius: 30px;
+  background-color: red;
+  animation: pulsate 1s
+  ease-in-out;
+}
+
+@keyframes pulsate {
+  0%{
+    box-shadow:
+    0 0 25px white;
+  }
+}
+.unfollow span:nth-child(1):after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 4em;
+  left: 0;
+  top:0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.2s;
+  box-shadow: 0 0 10px 40px white;
+}
+
+.unfollow span:nth-child(1):active:after {
+  box-shadow: 0 0 0 0 white;
+  position: absolute;
+  border-radius: 4em;
+  left: 0;
+  top:0;
+  opacity: 1;
+  transition: 0s;
+}
+@media screen and (max-width: 1341px) {
+  .profile{
+    flex-direction: column;
+  }
+}

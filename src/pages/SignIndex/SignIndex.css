@@ -1,0 +1,187 @@
+.container {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  height: 100%;
+}
+
+.col1 {
+  flex: 0.5;
+  position: relative;
+  background-color: #00ADB5;
+}
+
+.info {
+  position: absolute;
+  top: 0px;
+  left: 20%;
+  right: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px 0px;
+}
+
+.col2 {
+  flex: 0.5;
+  background-color: #15202b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px;
+}
+
+.header {
+  color: #EEEEEE;
+  font-size: 25px;
+  font-weight: 700;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none; 
+  -ms-user-select: none;
+  user-select: none;
+  align-items: center;
+  flex-direction: row;
+  justify-content: right;
+  padding-left: 30%;
+  padding-right: 25%;
+  padding-top: 300px;
+}
+
+.join {
+  margin: 59px 0px 15px;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+}
+.buttons {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  margin-left: 150px;
+  margin-right: 150px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none; 
+  -ms-user-select: none;
+  user-select: none; 
+}
+
+.mainSignup {
+  align-items: stretch;
+  background-color: #15202b;
+  border-color: #00ADB5;
+  border-color: #00ADB5;
+  border-radius: 9999px;
+  border-style: solid;
+  border-width: 1px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4%;
+  padding: 13px 30px;
+  max-width: 50%;
+  margin-left: 12%;
+}
+
+.mainSignupItem {
+  align-items: center;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  align-items: center;
+}
+.mainSignupText {
+  color: #ffffff;
+  display: inline;
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+}
+.mainSignupText:hover {
+  color: #00ADB5;
+}
+.mainLogin {
+  align-items: stretch;
+  background-color: #15202b;
+  border-color: #00ADB5;
+  border-color: #00ADB5;
+  border-radius: 9999px;
+  border-style: solid;
+  border-width: 1px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 12%;
+  padding: 13px 30px;
+  max-width: 50%;
+}
+
+.mainLoginItem {
+  align-items: center;
+  color: #1da1f2;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.mainLoginText {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+}
+.mainLoginText:hover {
+  color: #00ADB5;
+}
+
+@media (min-width: 0) and (max-width: 700px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: none;
+    overflow-y: scroll;
+  }
+  .col1 {
+    flex: 1;
+  }
+  .info div span {
+    font-size: 15px;
+  }
+  .col2 {
+    flex: 1;
+  }
+  .menu {
+    margin: 20px 10vh;
+  }
+}
+.logo512{
+  display: block;
+  width: 80px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none; 
+  -ms-user-select: none;
+  user-select: none;
+  position: relative;
+  flex-direction: column;
+  padding-left: 40%;
+}
+.article {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  place-items: center;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none; 
+  -ms-user-select: none;
+  user-select: none; 
+}

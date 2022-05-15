@@ -1,0 +1,33 @@
+.NewRating {
+  display: flex;
+  padding: 10px 35px;
+  border-bottom: 0.5px var(--blue) solid;
+}
+.NewRating:hover {
+  background-color: var(--hover-color);
+}
+.NewRating > .MuiSvgIcon-root {
+  color: var(--blue);
+  font-size: 30px;
+  text-align: center;
+  margin-right: 2%;
+}
+.NewRating > div > div {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 8px;
+}
+.NewRating > div > div > .MuiAvatar-root {
+  margin-right: 5px;
+  width: 30px;
+  height: 30px;
+}
+.NewRating > div > span {
+  color: #ffffff;
+  font-size: 15px;
+}
+.NewRating > div > span:nth-child(3) {
+  display: block;
+  color: #8899a6;
+  font-size: 15px;
+}

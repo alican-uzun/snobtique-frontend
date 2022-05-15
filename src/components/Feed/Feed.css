@@ -1,0 +1,83 @@
+.feed {
+  flex: 1;
+  border-right: 0.5px var(--blue) solid;
+  border-left: 0.5px var(--blue) solid;
+  min-height: 100vh;
+  height: max-content;
+  border-bottom: 0.5px var(--blue) solid;
+  max-width: 50%;
+  align-items: flex-start;
+  flex-direction: row;
+  margin-top: 1px;
+}
+
+.feed-header {
+  position: sticky;
+  top: 0;
+  background-color: var(--main-bg-color);
+  z-index: 100;
+  border-top: 0.5px var(--blue) solid;
+  border-bottom: 0.5px var(--blue) solid;
+  padding: 0px 15px;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none; 
+  -ms-user-select: none;
+  user-select: none; 
+}
+.feed-headerText {
+  flex: 0.5;
+  font-size: 25px;
+  font-weight: 1000;
+  color: var(--blue);
+  flex-direction: column;
+}
+
+.feed-header .MuiAvatar-root {
+  display: none;
+}
+@media (min-width: 0) and (max-width: 1000px) {
+  .feed {
+    flex: 1;
+  }
+}
+@media (min-width: 0) and (max-width: 450px) {
+  .feed {
+    flex: 1;
+    margin: 0px;
+  }
+  .feed-header .MuiAvatar-root {
+    display: block;
+    margin-right: 20px;
+    height: 32px;
+    width: 32px;
+  }
+  .feed > .snobBox,
+  .feed > .bottomBorder {
+    display: none;
+    flex-direction: column;
+  }
+}
+.feedLogo{
+  display: block;
+  width: 80px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none; 
+  -ms-user-select: none;
+  user-select: none; 
+}
+
+@media screen and (max-width: 1000px) {
+  .feed{
+    width: 100%;
+    max-width: 100%;
+  }
+}
