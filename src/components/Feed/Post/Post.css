@@ -90,4 +90,5 @@
 }
 .PostStar {
   flex-direction: row;
+  position : absolute;
 }
