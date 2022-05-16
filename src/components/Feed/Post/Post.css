@@ -48,8 +48,7 @@
   font-size: 15px;
 }
 .post-event {
-  display: flex;
-  flex: 1;
+  position: absolute;
 }
 .post-event > div {
   flex: 0.25;
@@ -89,6 +88,5 @@
   color: #e0245e;
 }
 .PostStar {
-  flex-direction: row;
-  position : absolute;
+  position : relative / absolute; left : 0px;
 }
