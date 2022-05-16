@@ -48,8 +48,9 @@
   font-size: 15px;
 }
 .post-event {
-  position: absolute;
+  display: flex;
   flex: 1;
+  flex-direction: row;
 }
 .post-event > div {
   flex: 0.25;
@@ -87,7 +88,4 @@
 }
 .post-event div:nth-child(3) .postIcon:hover + span {
   color: #e0245e;
-}
-.PostStar {
-  position : relative / absolute; left : 0px;
 }
