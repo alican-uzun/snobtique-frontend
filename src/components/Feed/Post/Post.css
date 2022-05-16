@@ -88,3 +88,6 @@
 .post-event div:nth-child(3) .postIcon:hover + span {
   color: #e0245e;
 }
+.PostStar {
+  flex-direction: row;
+}

@@ -26,7 +26,7 @@ function Post({ post, i }) {
           {post.comment}
         </div>
         <div className="post-event">
-          <div style={{ marginTop: "10px" }}>
+          <div className="PostStar" style={{ marginTop: "10px" }}>
             <StaticStar posted={true} rating={post.score} />
           </div>
           <div></div>
