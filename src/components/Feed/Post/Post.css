@@ -49,6 +49,7 @@
 }
 .post-event {
   position: absolute;
+  flex: 1;
 }
 .post-event > div {
   flex: 0.25;
