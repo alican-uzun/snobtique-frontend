@@ -50,7 +50,6 @@
 .post-event {
   display: flex;
   flex: 1;
-  flex-direction: row;
 }
 .post-event > div {
   flex: 0.25;

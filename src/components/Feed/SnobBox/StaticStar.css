@@ -6,4 +6,5 @@
     -ms-user-select: none;
     user-select: none;
     position: relative;
+    flex-direction: row;
 }
